@@ -1,0 +1,9 @@
+---
+const {link , title} = Astro.props
+---
+
+<li class="list-item list-item--material" style="padding-right: 16px;">
+    <div class="list-item__center list-item--material__center" dir="rtl" style="border-bottom: solid 2px #eee; padding: 25px 0;" data-name = {link} onclick="document.querySelector('#myNavigator').pushPage(this.dataset.name+'.html')">
+      <div class="list-item__title list-item--material__title" style="direction: rtl; text-align: right; font-weight: 700;">{title}</div>
+    </div>
+  </li>

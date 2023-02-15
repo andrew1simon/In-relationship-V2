@@ -1,0 +1,28 @@
+---
+const { title } = Astro.props
+---
+<template id={title + ".html"}>
+    <ons-page id={title}>
+      <ons-toolbar>
+          <div class="d-flex align-items-center header-upper">
+              <div class="row header-cont">
+                <div class={title=="home" && "hidden" || "col-2"}><i class="fa-solid fa-angle-left back-icon" onclick="myNavigator.popPage()"></i></div>
+                <div class="col">
+                   <h3 class="text-header">ExtraOrdinary</h3>
+                </div>
+              </div>
+              </div>
+        </ons-toolbar>
+        <div class="space-top-sub"></div>
+        <slot/>
+        <div class="space"></div>
+    <div class="buttom-menu-upper-cont">
+        <div class="row">
+            <div class="col d-flex flex-column align-items-center justify-content-center"><i class={title=="home" && "active" + " fa-solid fa-house menu-icon" || "fa-solid fa-house menu-icon"} onclick="home()"></i><h4 class={title=="home" && "active" + " buttom-menu-text"|| "buttom-menu-text"}>home</h4></div>
+          <div class="col d-flex flex-column align-items-center justify-content-center" onclick="calender()"><i class={title=="calender" && "active" + " fa-solid fa-calendar menu-icon" || "fa-solid fa-calendar menu-icon"}></i><h4 class={title=="calender" && "active" + " buttom-menu-text"|| "buttom-menu-text"}>calender</h4></div>
+          <div class="col d-flex flex-column align-items-center justify-content-center" onclick="s3ar()"><i class={title=="s3ar" && "active" + " fa-solid fa-bullhorn menu-icon" || "fa-solid fa-bullhorn menu-icon"}></i><h4 class={title=="s3ar" && "active" + " buttom-menu-text"|| "buttom-menu-text"}>43ar</h4></div>
+        </div>
+
+    </div>
+</ons-page>
+</template>

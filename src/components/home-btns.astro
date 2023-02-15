@@ -1,0 +1,33 @@
+---
+import AndroidList from "./android-list.astro";
+import IosList from "./ios-list.astro";
+---
+
+<ons-if platform="android">
+      <ul class="list list--material">
+        <AndroidList link="azay-y3ny" title="ازاى يعنى الصلاة"/>
+        <AndroidList link="mard-elangel" title="مرد إنجيل أيام الصوم الكبير" ntarnima="true"/>
+        <AndroidList link="marad-alahad" title="مرد إنجيل سبوت وآحاد الصوم الكبير" ntarnima="true"/>
+        <AndroidList link="ahabk" title="أحبك معنى كل وجود"/>
+        <AndroidList link="ayha-al-f5ary" title="أيها الفخاري الأعظم"/>
+        <AndroidList link="kol-youm" title="كل يوم تحت صليبك"/>
+        <AndroidList link="ma-ahla" title="ما أحلى ساعة الصلاة"/>
+        <AndroidList link="ma-ly-soak" title="مالي سواك يا سيدي"/>
+      </ul>
+</ons-if>
+
+
+
+
+<ons-if platform="ios">
+    <ul class="list list--inset">
+      <IosList link="azay-y3ny" title="ازاى يعنى الصلاة"/>
+      <IosList link="mard-elangel" title="مرد إنجيل أيام الصوم الكبير" ntarnima="true"/>
+      <IosList link="marad-alahad" title="مرد إنجيل سبوت وآحاد الصوم الكبير" ntarnima="true"/>
+      <IosList link="ahabk" title="أحبك معنى كل وجود"/>
+      <IosList link="ayha-al-f5ary" title="أيها الفخاري الأعظم"/>
+      <IosList link="kol-youm" title="كل يوم تحت صليبك"/>
+      <IosList link="ma-ahla" title="ما أحلى ساعة الصلاة"/>
+      <IosList link="ma-ly-soak" title="مالي سواك يا سيدي"/>
+      </ul>
+</ons-if>

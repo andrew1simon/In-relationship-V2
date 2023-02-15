@@ -1,0 +1,57 @@
+---
+import Page from "../components/page.astro";
+import Layout from "../layouts/Layout.astro";
+import Tarnima from "../components/tarnima.astro";
+import HomeBtns from "../components/home-btns.astro";
+import CalPage from "../components/cal-page.astro";
+---
+
+<Layout>
+    <Page title="home">
+        <div class="d-flex align-content-center justify-content-center pb-3">
+            <img src="/img/home.jpg"  class="tranime-img" style="border-radius: 5%;"/>
+        </div>
+        <h1 class="ps-3 fw-semibold">Tranime</h1>
+        <HomeBtns/>
+    </Page>
+    <Page title="azay-y3ny">
+            <Tarnima name = "ازاى يعنى الصلاة" path="/img/azay-y3ny.png" />
+    </Page>
+    <Page title="mard-elangel">
+            <Tarnima name = "مرد إنجيل أيام الصوم الكبير"  path="/img/mard-elangel.png" ntarnima="true"/>
+            <div class="d-flex align-items-center justify-content-center img-div-days flex-column">
+                <img src="/img/mard-elangel-2.png" class="tranime-img"/>
+            </div>
+    </Page>
+    <Page title="marad-alahad">
+        <Tarnima name = "مرد إنجيل سبوت وآحاد الصوم الكبير"path="/img/marad-alsabt.png" ntarnima="true"/>
+    </Page>
+    <Page title="ahabk">
+        <Tarnima name = "أحبك معنى كل وجود"path="/img/ahabk.png" />
+    </Page>
+    <Page title="ayha-al-f5ary">
+        <Tarnima name = "أيها الفخاري الأعظم"path="/img/ayha-al-f5ary.png" />
+    </Page>
+    <Page title="kol-youm">
+        <Tarnima name = "كل يوم تحت صليبك"path="/img/kol-youm.png" />
+    </Page>
+    <Page title="ma-ahla">
+        <Tarnima name = "ما أحلى ساعة الصلاة" path="/img/ma-ahla.png" />
+    </Page>
+    <Page title="ma-ly-soak">
+        <Tarnima name = "مالي سواك يا سيدي" path="/img/ma-ly-soak.png" />
+    </Page>
+    <Page title="calender">
+        <CalPage/>
+    </Page>
+    <Page title="s3ar">
+        <h3 class="title-sub-pages fs-1">الشعار</h3>
+        <div class="d-flex align-content-center justify-content-center">
+            <img
+        src="/img/el43ar.jpg"
+        alt="" class="tranime-img"
+      />
+        </div>
+        
+    </Page>
+</Layout>

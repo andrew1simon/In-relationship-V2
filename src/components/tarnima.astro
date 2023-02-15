@@ -1,0 +1,8 @@
+---
+const {name , path} = Astro.props
+const {ntarnima} = Astro.props
+---
+<h3 class="title-sub-pages" dir="rtl">{ntarnima&& name || "ترنيمة"+" "+name}</h3>
+<div class="d-flex align-items-center justify-content-center img-div-days flex-column">
+    <img src={path} alt={name} class="tranime-img"/>
+</div>

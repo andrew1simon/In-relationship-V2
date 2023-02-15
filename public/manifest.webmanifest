@@ -1,0 +1,15 @@
+{
+  "background_color": "white",
+  "description": "Shows random fox pictures. Hey, at least it isn't cats.",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "img/icon.jpeg",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "In relationship",
+  "short_name": "In relationship",
+  "start_url": "/new-index"
+}
