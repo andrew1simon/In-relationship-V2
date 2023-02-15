@@ -18,7 +18,6 @@ const cacheAssets = [
   '/img/home.jpg',
   '/img/marad-alsabt.png',
   '/img/mard-elangel-2.png',
-  '/img/marad-alsabt.png',
   '/img/day-1.png',
   '/img/day-2.png',
   '/img/el43ar.jpg',
@@ -29,7 +28,7 @@ const cacheAssets = [
   'https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css' ,
   'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css' ,
   '/src/layouts/Layout.astro?astro&type=script&index=0&lang.ts',
-  
+
   'img/icon.jpeg'
 
 ];
